@@ -7,6 +7,6 @@ namespace R5T.Epidarus
 {
     public interface IEndpointFactory
     {
-        IEndpoint GetEndpoint(EndpointIdentity endpoint);
+        IEndpoint GetEndpoint(EndpointIdentity endpointIdentity);
     }
 }
