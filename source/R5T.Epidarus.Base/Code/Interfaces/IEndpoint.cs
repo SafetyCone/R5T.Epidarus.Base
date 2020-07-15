@@ -28,6 +28,6 @@ namespace R5T.Epidarus
         /// Sends an anomaly to the endpoint, allowing the endpoint to determine the message sent to the anomaly.
         /// Asynchronous.
         /// </summary>
-        Task SendAsync(AnomalyIdentity anomalyIdentity);
+        Task SendAsync(AnomalyIdentity anomalyIdentity, string hostString);
     }
 }
