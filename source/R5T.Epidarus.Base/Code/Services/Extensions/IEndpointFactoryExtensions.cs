@@ -15,7 +15,7 @@ namespace R5T.Epidarus
         {
             var endpoints = await endpointFactory.GetEndpointsAsync(EnumerableHelper.From(endpointIdentity));
 
-            var endpoint = endpoints.First();
+            var endpoint = endpoints.Single();
             return endpoint;
         }
     }
