@@ -10,7 +10,7 @@ namespace R5T.Epidarus
 {
     public static class IEndpointFactoryExtensions
     {
-        public static async Task<IEndpoint> GetEndpointAsync(this IEndpointFactory endpointFactory,
+        public static async Task<IEndpoint> GetEndpoint(this IEndpointFactory endpointFactory,
             EndpointIdentity endpointIdentity)
         {
             var endpoints = await endpointFactory.GetEndpointsAsync(EnumerableHelper.From(endpointIdentity));
