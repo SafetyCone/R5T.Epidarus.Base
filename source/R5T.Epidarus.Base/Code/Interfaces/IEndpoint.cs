@@ -15,7 +15,8 @@ namespace R5T.Epidarus
 
         /// <summary>
         /// Sends an anomaly to the endpoint, allowing the endpoint to determine the message sent to the anomaly.
+        /// Returns the status that should be applied to the anomaly after sending.
         /// </summary>
-        Task Send(AnomalyIdentity anomalyIdentity);
+        Task<string> Send(AnomalyIdentity anomalyIdentity);
     }
 }
